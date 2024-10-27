@@ -1,11 +1,11 @@
 import pyrogram, os, asyncio
 
 # Environment Variables
-try: app_id = int(os.environ.get("app_id", "24825870"))
+try: app_id = int(os.environ.get("app_id", "24894984"))
 except Exception as app_id: print(f"⚠️ App ID Invalid {app_id}")
-try: api_hash = os.environ.get("api_hash", "12ab9061b6260f9b91632947331ea0f6")
+try: api_hash = os.environ.get("api_hash", "4956e23833905463efb588eb806f9804")
 except Exception as api_id: print(f"⚠️ Api Hash Invalid {api_hash}")
-try: bot_token = os.environ.get("bot_token", "7162644889:AAFKmJtOSYMbeIf3QWAGgcR0FZqZv85Sakg")
+try: bot_token = os.environ.get("bot_token", "7328135476:AAEapfWhc4yo0jsQX_LD5cMByF3i4exUtQ0")
 except Exception as bot_token: print(f"⚠️ Bot Token Invalid {bot_token}")
 
 # Initialize the Bot
@@ -29,12 +29,12 @@ about_message = """
 
 # Replacement Mapping (Define your replacements here)
 replacement_dict = {
-    "@demon_0214": "[𝑴𝑨𝑯𝑰®🇮🇳](https://t.me/+TQfNhTbrVC04NWNl)",
+    "@demon_0214": "[JAAT🇮🇳](https://t.me/+TQfNhTbrVC04NWNl)",
     "Extracted by:": "𝐄𝐱𝐭𝐫𝐚𝐜𝐭𝐞𝐝 𝐁𝐲 ➤",
-    "जय श्री राम 🚩🚩": "Coaching ➤ Kalam Academy Sikar",
-    "Unrestricted by Team SPY": "",
+    "जय श्री राम 🚩🚩": "Coaching ➤ paid course ",
+    "Unrestricted by Team TARGETALLCOURSE": "",
     "MR Joker": "",
-    "@MK_rj49 🚩": "[𝑴𝑨𝑯𝑰®🇮🇳](https://t.me/+TQfNhTbrVC04NWNl)",
+    "jaat 🚩": "[𝑴r ®🇮🇳]",
     "Downloaded by:": "𝐄𝐱𝐭𝐫𝐚𝐜𝐭𝐞𝐝 𝐁𝐲 ➤",
     
     # Add more replacements as needed
@@ -77,7 +77,7 @@ def edit_caption(bot, update: pyrogram.types.Message):
     if update.caption:
         # Replace words in the caption
         new_caption = replace_words(update.caption, replacement_dict)
-        new_caption += "\n𝔼𝕏ℙ𝔼ℂ𝕋 𝕋ℍ𝔼 𝕌ℕ𝔼𝕏ℙ𝔼ℂ𝕋𝔼𝔻 🫰❤️‍🔥\n•┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈•\n       **@Free_Batches_bot** "
+        new_caption += "\n𝔼𝕏ℙ𝔼ℂ𝕋 🤞🏻𝕋ℍ𝔼 🖊️𝕌ℕ𝔼𝕏ℙ𝔼ℂ𝕋𝔼𝔻 😈📩\n•┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈•\n       **@Free_Batches_bot** "
         
         try:
             try:
