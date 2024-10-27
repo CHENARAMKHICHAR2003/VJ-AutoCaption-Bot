@@ -16,14 +16,14 @@ start_message = """
 <b>👋Hello {}</b>
 <b>I am an AutoCaption bot</b>
 <b>All you have to do is add me to your channel and I will show you my power</b>
-<b>@VJ_Botz</b>"""
+<b>@Targetallcourse</b>"""
 
 about_message = """
-<b>• Name : <a href=https://t.me/VJ_Botz>VJ AutoCaption</a></b>
-<b>• Developer : <a href=https://t.me/VJ_Botz>[VJ UPDATES]</a></b>
+<b>• Name : <a href=https://t.me/targetallcourse>Cr AutoCaption</a></b>
+<b>• Developer : <a href=https://t.me/Targetallcourse>[VJ UPDATES]</a></b>
 <b>• Language : Python3</b>
 <b>• Library : Pyrogram v{version}</b>
-<b>• Updates : <a href=https://t.me/VJ_Botz>Click Here</a></b>
+<b>• Updates : <a href=https://t.me/targetallcourse>Click Here</a></b>
 <b>• Source Code : <a href=https://github.com/VJBots/VJ-AutoCaption-Bot>Click Here</a></b>"""
 
 
@@ -77,7 +77,7 @@ def edit_caption(bot, update: pyrogram.types.Message):
     if update.caption:
         # Replace words in the caption
         new_caption = replace_words(update.caption, replacement_dict)
-        new_caption += "\n𝔼𝕏ℙ𝔼ℂ𝕋 🤞🏻𝕋ℍ𝔼 🖊️𝕌ℕ𝔼𝕏ℙ𝔼ℂ𝕋𝔼𝔻 😈📩\n•┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈•\n       **@Free_Batches_bot** "
+        new_caption += "\n𝔼𝕏ℙ𝔼ℂ𝕋 🤞🏻𝕋ℍ𝔼 🖊️𝕌ℕ𝔼𝕏ℙ𝔼ℂ𝕋𝔼𝔻 😈📩\n•┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈•\n       **@free_course2_bot** "
         
         try:
             try:
@@ -109,7 +109,7 @@ def get_file_details(update: pyrogram.types.Message):
 def start_buttons(bot, update):
     bot = bot.get_me()
     buttons = [[
-        pyrogram.types.InlineKeyboardButton("Updates", url="t.me/mahi_Botz"),
+        pyrogram.types.InlineKeyboardButton("Updates", url="t.me/targetallcourse"),
         pyrogram.types.InlineKeyboardButton("About 🤠", callback_data="about")
     ], [
         pyrogram.types.InlineKeyboardButton("➕️ Add To Your Channel ➕️", url=f"http://t.me/{bot.username}?startchannel=true")
@@ -124,7 +124,7 @@ def about_buttons(bot, update):
 
 # Start the Bot
 print("Telegram AutoCaption V1 Bot Start")
-print("Bot Created By https://t.me/Mahi_botz")
+print("Bot Created By https://t.me/targetallcourse")
 
 AutoCaptionBotV1.run()
 
